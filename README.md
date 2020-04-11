@@ -149,12 +149,26 @@ course1_1082 <-
 ```{r}
 library(jsonlite)
 fromJSON("https://opendata.cwb.gov.tw/fileapi/v1/opendataapi/F-C0032-001?Authorization=rdec-key-123-45678-011121314&format=JSON") ->
-  weather_next36hours
+  weather_next6hours
 ```
 
 
+#4/12
+##連鎖選取
+```{r}
+numVector <- c(2,3,6,-1,4,2,6)
+select1 <- numVector[c(1,4)]; select1
+select2 <- select1[[1]]; select2
 
+# 相當於
+numVector[c(1,4)][[1]]
 
+select1 <- numVector[c(T,T,F,T,F,F,T)]; select1
+select2 <- select1[c(1,4)]; select2
+
+# 相當於
+numVector[c(T,T,F,T,F,F,T)][c(1,4)]
+```
 
 
 
