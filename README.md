@@ -31,40 +31,40 @@ listexample
 ```
 
 
-# list§t¨â­Ólists, ¤l¼hlist¤S¦U§t¨â­Óvectors
+# list?t????lists, ?l?hlist?S?U?t????vectors
 ```{r}
-`¤p©ú108¾Ç¦~½ÒªíC` <- list(
-  `108¾Ç¦~²Ä1¾Ç´Á`=list(
-    c("108-1"), # ¥i¥u¼g "108-1"
-    c("°ª¯Å·|­p¾Ç","°ªµ¥²Î­p¾Ç")
+`?p??108?Ç¦~?Òª?C` <- list(
+  `108?Ç¦~??1?Ç´?`=list(
+    c("108-1"), # ?i?u?g "108-1"
+    c("???Å·|?p??","?????Î­p??")
        ),
-  `108¾Ç¦~²Ä2¾Ç´Á`=list(
+  `108?Ç¦~??2?Ç´?`=list(
     c("108-2"),
-    c("­¹¦b©Ô¤B¬ü¬w")
+    c("???b?Ô¤B???w")
   )
 )
-print(`¤p©ú108¾Ç¦~½ÒªíC`)
+print(`?p??108?Ç¦~?Òª?C`)
 ```
 
 
 ```{r}
-# list§t¨â­Ólists, ¤l¼hlist¤S¦U§t¨â­Óvectors
-"¤p©ú108¾Ç¦~½ÒªíC" <- list(
-  `108¾Ç¦~²Ä1¾Ç´Á`=list(
-    "108-1", # ¥i¥u¼g "108-1"
-    'course'=c("°ª¯Å·|­p¾Ç","°ªµ¥²Î­p¾Ç")
+# list?t????lists, ?l?hlist?S?U?t????vectors
+"?p??108?Ç¦~?Òª?C" <- list(
+  `108?Ç¦~??1?Ç´?`=list(
+    "108-1", # ?i?u?g "108-1"
+    'course'=c("???Å·|?p??","?????Î­p??")
        ),
-  `108¾Ç¦~²Ä2¾Ç´Á`=list(
+  `108?Ç¦~??2?Ç´?`=list(
     c("108-2"),
-    c("­¹¦b©Ô¤B¬ü¬w")
+    c("???b?Ô¤B???w")
   )
 )
-print(`¤p©ú108¾Ç¦~½ÒªíC`)
+print(`?p??108?Ç¦~?Òª?C`)
 ```
 
 ```{r}
 commit <- list(
-  author = c("Martin¦Ñ®v", "mtlin@gm.ntpu.edu.tw", "2020-03-25T07:17:40Z"),
+  author = c("Martin?Ñ®v", "mtlin@gm.ntpu.edu.tw", "2020-03-25T07:17:40Z"),
   committer = c("emilyluckey", "emily007@gmail.com", "2020-03-26T08:18:40Z"),
   message = c("update")
 )
@@ -75,7 +75,7 @@ print(commit)
 library(lubridate)
 authorValues <- 
   list(
-    name="Martin¦Ñ®v",  
+    name="Martin?Ñ®v",  
     email="mtlin@gm.ntpu.edu.tw",
     time=ymd_hms("2020-03-25T07:17:40Z")
   )
@@ -96,24 +96,24 @@ print(commit)
 ```
 
 ```{r}
-library(jsonlite) # ¤£¤Ö¦P¾Ç³o¦æ·|¦³Error¡AÁÙ°O±o¦p¦ó±Æ°£¶Ü¡H
+library(jsonlite) # ???Ö¦P?Ç³o???|??Error?A?Ù°O?o?p???Æ°??Ü¡H
 toJSON(commit)
 ```
 ```{r}
 # 108-1 
 course1_1081 <- 
   list(
-    name="­ÓÅé¸gÀÙ¾Ç",
+    name="?????g?Ù¾?",
     teacher="Alice",
     grade=85
   )
 course2_1081 <-
   list(
-    name="Á`Åé¸gÀÙ¾Ç",
+    name="?`???g?Ù¾?",
     teacher="Mark",
     grade=78
   )
-`108-1­×½Ò°O¿ı` <- 
+`108-1?×½Ò°O??` <- 
   list(
     course1_1081,
     course2_1081
@@ -122,26 +122,26 @@ course2_1081 <-
 # 108-2
 course1_1082 <- 
   list(
-    name="§@·~¬ã¨s",
+    name="?@?~???s",
     teacher="Jason",
     grade=90
   )
-`108-2­×½Ò°O¿ı` <- 
+`108-2?×½Ò°O??` <- 
   list(
     course1_1082
   )
 
-# ¾ã¦X¨â¾Ç´Á
-`¨C¾Ç´Á­×½Ò°O¿ı` <- list(
-  `108-1`=`108-1­×½Ò°O¿ı`,
-  `108-2`=`108-2­×½Ò°O¿ı`
+# ???X???Ç´?
+`?C?Ç´ï¿½ï¿½×½Ò°O??` <- list(
+  `108-1`=`108-1?×½Ò°O??`,
+  `108-2`=`108-2?×½Ò°O??`
 )
 
-# §¹¦¨°O¿ı
-`¤p©úªº­×½Ò°O¿ı` <- 
+# ?????O??
+`?p?????×½Ò°O??` <- 
   list(
-    name="¤p©ú",
-    semesters=`¨C¾Ç´Á­×½Ò°O¿ı`
+    name="?p??",
+    semesters=`?C?Ç´ï¿½ï¿½×½Ò°O??`
   )
 
 ```
@@ -154,19 +154,19 @@ fromJSON("https://opendata.cwb.gov.tw/fileapi/v1/opendataapi/F-C0032-001?Authori
 
 
 #4/12
-##³sÂê¿ï¨ú
+##?s??????
 ```{r}
 numVector <- c(2,3,6,-1,4,2,6)
 select1 <- numVector[c(1,4)]; select1
 select2 <- select1[[1]]; select2
 
-# ¬Û·í©ó
+# ?Û·???
 numVector[c(1,4)][[1]]
 
 select1 <- numVector[c(T,T,F,T,F,F,T)]; select1
 select2 <- select1[c(1,4)]; select2
 
-# ¬Û·í©ó
+# ?Û·???
 numVector[c(T,T,F,T,F,F,T)][c(1,4)]
 ```
 
@@ -175,8 +175,8 @@ numVector[c(T,T,F,T,F,F,T)][c(1,4)]
 ```{r}
 a <- c("1","b","TRUE")
 a
-a[[2]] <- "c" # ¤¸¯À¦s¦b: ´À´«
-a[[4]] <- "7" # ¤¸¯À¤£¦s¦b¡G ¼W¥[
+a[[2]] <- "c" # ???ï¿½ï¿½s?b: ?ï¿½ï¿½?
+a[[4]] <- "7" # ???ï¿½ï¿½??s?b?G ?W?[
 a[c(5,6)] <- c("J", "K")
 a
 ```
@@ -187,9 +187,25 @@ a[-c(1,3)]
 a[c(-2)]
 
 print(a)
-a[-c(1,3)] -> a # ­n¦^¦s¤~ºâ¯uªº§R°£
+a[-c(1,3)] -> a # ?n?^?s?~???u???R??
+```
+#4/30
+```{r}
+source("https://www.dropbox.com/s/qsrw069n94k61lj/transcript100to103_list.R?dl=1")
 ```
 
+```{r}
+# åªè¦æˆç¸¾å¤§æ–¼85çš„
+pick_above85 <-
+  transcript100to103$`æˆç¸¾` > 85
+```
+
+```{r}
+# å„å­¸å±†2å¹´ç´šäººæ•¸
+table(transcript100to103$å­¸å±†)
+# å„å­¸å±†2å¹´ç´šæˆç¸¾å¤§æ–¼85äººæ•¸
+table(transcript100to103$å­¸å±†[pick_above85])
+```
 
 
 
