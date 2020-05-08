@@ -206,6 +206,26 @@ table(transcript100to103$學屆)
 # 各學屆2年級成績大於85人數
 table(transcript100to103$學屆[pick_above85])
 ```
+```{r}
+example <- list(
+  name=c("小明","小花","小新","美美"),
+  height=c(175,166,170,160),
+  weight=c(77,NA,60,43),
+  birthday=lubridate::ymd(c("1998-03-11","1999-12-22","1995-08-22","2001-10-10")),
+  hobby=c("美食 旅遊","旅遊 時尚","3C 美食","音樂 旅遊"),
+  residence=c("Taipei","New Taipei","Taichung","Kaohsiung"),
+  allowance=factor(c("0-1000","1001-2000","2000+","1001-2000")),
+  bloodType=c("A","B","B","O")
+)
+```
+```{r}
+str(example[c("name","height")])
+
+pick_above170 <- example$height >= 170
+example$name[pick_above170]
+```
+
+#5/08
 
 
 
