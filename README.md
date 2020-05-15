@@ -227,6 +227,15 @@ example$name[pick_above170]
 
 #5/08
 
+#5/15
+```{r}
+factor1 <- factor(
+  c("A","A","C","A","D","F","D","D")
+)
+factor1
 
+levels(factor1) <- c("優","優","尚可","普")
 
+factor1
+```
 
