@@ -236,7 +236,7 @@ factor1
 
 levels(factor1) <- c("優","優","尚可","普")
 
-factor1
+
 ```
 
 #5/22
